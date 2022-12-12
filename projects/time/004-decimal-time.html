@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Blog header -->
+  <header id="site-header">
+    <h1 class="site-title"><a href="../../index.html">aidan's blog</a></h1>
+  </header>
+
+
+  <!--Webpage Title-->
+  <head>
+    <meta charset="utf-8">
+    <title>Decimal Time | aidan's blog</title>
+    <link href="../../styles/style.css" rel="stylesheet">
+  </head>
+
+  <!--Sidenav Themes File-->
+  <script src="../../styles/themes.js"></script>
+
+  <!-- Side navigation bar -->
+  <div class="sidenav">
+    <a href="../../index.html">Home</a>
+    <a href="../../art/art.html">Gallery</a>
+    <hr>
+    <details>
+      <summary>Writings</summary>
+      <ul>
+        <li><a href="../../writings/books/books.html">Books</a></li>
+        <li><a href="../../writings/personal-essays/personal-essays.html">Personal Essays</a></li>
+        <li><a href="../../writings/short-stories/short-stories.html">Short Stories</a></li>
+        <li><a href="../../writings/poems/poems.html">Poems</a></li>
+        <li><a href="../../writings/articles/articles.html">Articles</a></li>
+      </ul>
+    </details>
+    <hr>
+    <a href="../../projects/projects.html">Projects</a>
+    <a href="../../glossary/glossary.html">Glossary</a>
+    <a href="../../musical-glossary/musical-glossary.html">Musical Glossary</a>
+    <hr>
+    <a href="../../index/index.html">Index</a>
+    <a href="../../about-me/about-me.html">About Me</a>
+    <hr>
+    <a onclick="changeThemeColors()">Change Theme</a>
+  </div>
+
+
+  <body class="main" onload="loadThemeColors()">
+
+    <div id="page-wrap">
+      <article style="margin: 0 20% 0 20%">
+
+        <!-- Quick navigation -->
+        <p style="margin: 0 10% 0 10%"><a href="../../projects/projects.html">&larr; back to projects</a></p>
+        <p style="margin: 0 10% 0 10%; text-align: left">
+          <a href="003-four-year-calendar.html" title="Four-Year Calendar">&larr; to previous entry</a>
+          <span style="float:right">
+            <a href="005-two-year-calendar.html" title="Two-Year Calendar">to next project &rarr;</a>
+          </span>
+        </p>
+
+        <!-- Entry Title -->
+        <header style="margin: 0 10% 0 10%">
+          <h1 style="margin: 5% 0 0 0">Decimal Time</h1>
+          <p style="margin: 0 0 30px 0">Project 004, 2021/7/6</p>
+          
+          <hr><br>
+
+        </header>
+
+        <!-- Main Content -->
+        <article style="margin: 0 10% 0 10%;">
+          <details>
+            <summary>Contents</summary>
+            <ol>
+              <li>A01: Decimal Time System (<a href="004-A01.pdf">PDF</a>)</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Python Code</summary>
+            <ol>
+              <li>Decimal Calculator (<a href="004-decimal_calculator.py">PY</a>)</li>
+              <li>Decimal Clock (<a href="004-decimal_clock.py">PY</a>)</li>
+              <li>Decimal Timer (<a href="004-decimal_timer.py">PY</a>)</li>
+            </ol>
+          </details>
+        </article>
+
+        <article style="margin: 0 10% 0 10%">
+          <p><strong><u>Decimal Time System (A01):</u></strong><br>
+            A time system of Base-10 (Decimal)
+          </p>
+
+          <p><u>Format:</u> hours : minutes : seconds</p>
+
+          <p>The hours are one-digit, from 0 to 9. Minutes and seconds go from 00 to 99.</p>
+            
+          <p>Within this system, it can easily be calculated how it compares to the standard time system:</p>
+            
+          <p>H + (M/60) + (S/3600) = T<br>
+            T / 2.4 =<br>
+            ANS * 10,000<br>
+            = FIVE-DIGIT NUMBER, broken with colons- 1:23:45<br>
+            = FOUR-DIGIT NUMBER, broken with colons- 0:12:34<br>
+            = etc.
+          </p>
+            
+          <p><u>Time comparisons:</u></p>
+          <p><ol>
+            <li>One decimal hour is <strong>2.4</strong> hours</li>
+            <li>One decimal minute is <strong>86.4</strong> seconds</li>
+            <li>One decimal second is <strong>0.864</strong> seconds</li>
+            <ul><li>This conversion (3.) is exact</li></ul>
+          </ol></p>
+            
+          <p><u>Each hour in standard time converted to Decimal:</u></p>
+          <p><ol>
+            <li>00:00 &rarr; 0:00</li>
+            <li>01:00 &rarr; 0:41</li>
+            <li>02:00 &rarr; 0:83</li>
+            <li>03:00 &rarr; 1:25</li>
+            <li>04:00 &rarr; 1:66</li>
+            <li>05:00 &rarr; 2:08</li>
+            <li>06:00 &rarr; 2:50</li>
+            <li>07:00 &rarr; 2:91</li>
+            <li>08:00 &rarr; 3:33</li>
+            <li>09:00 &rarr; 3:75</li>
+            <li>10:00 &rarr; 4:16</li>
+            <li>11:00 &rarr; 4:58</li>
+            <li>12:00 &rarr; 5:00</li>
+            <li>13:00 &rarr; 5:41</li>
+            <li>14:00 &rarr; 5:83</li>
+            <li>15:00 &rarr; 6:25</li>
+            <li>16:00 &rarr; 6:66</li>
+            <li>17:00 &rarr; 7:08</li>
+            <li>18:00 &rarr; 7:50</li>
+            <li>19:00 &rarr; 7:91</li>
+            <li>20:00 &rarr; 8:33</li>
+            <li>21:00 &rarr; 8:75</li>
+            <li>22:00 &rarr; 9:16</li>
+            <li>23:00 &rarr; 9:58</li>
+          </ol></p>
+
+        <br><hr><br>
+
+        </article>
+
+  </body>
+</html> 

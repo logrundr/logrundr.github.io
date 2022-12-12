@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Blog header -->
+  <header id="site-header">
+    <h1 class="site-title"><a href="index.html">aidan's blog</a></h1>
+  </header>
+
+
+  <!--Webpage Title-->
+  <head>
+    <meta charset="utf-8">
+    <title>Home | aidan's blog</title>
+    <link href="styles/style.css" rel="stylesheet">
+  </head>
+
+  <!--Sidenav Themes File-->
+  <script src="styles/themes.js"></script>
+
+  <!-- Side navigation bar -->
+  <div class="sidenav">
+    <a href="index.html">Home</a>
+    <a href="art/art.html">Gallery</a>
+    <hr>
+    <details>
+      <summary>Writings</summary>
+      <ul>
+        <li><a href="writings/books/books.html">Books</a></li>
+        <li><a href="writings/personal-essays/personal-essays.html">Personal Essays</a></li>
+        <li><a href="writings/short-stories/short-stories.html">Short Stories</a></li>
+        <li><a href="writings/poems/poems.html">Poems</a></li>
+        <li><a href="writings/articles/articles.html">Articles</a></li>
+      </ul>
+    </details>
+    <hr>
+    <a href="projects/projects.html">Projects</a>
+    <a href="glossary/glossary.html">Glossary</a>
+    <a href="musical-glossary/musical-glossary.html">Musical Glossary</a>
+    <hr>
+    <a href="index/index.html">Index</a>
+    <a href="about-me/about-me.html">About Me</a>
+    <hr>
+    <a onclick="changeThemeColors()">Change Theme</a>
+  </div>
+
+
+  <body class="main" onload="loadThemeColors()">
+
+    <div id="page-wrap">
+      <article style="margin: 0 20% 0 20%">
+
+        <br>
+
+        <p style="margin: 0 10% 0 10%">Page created 2022/4/25, last updated 2022/10/25</p>
+
+        <!-- Entry Title -->
+        <header style="margin: 0 10% 0 10%">
+          <h1 style="margin: 5% 0 30px 0">Home</h1>
+          
+          <hr><br>
+
+        </header>
+
+        <!-- Main Content -->
+        <div align="justify" style="margin: 0 10% 10px 10%">
+          <p>
+            Welcome to my website. I mainly post personal writings and projects.
+          </p>
+          <p>My <em>Personal Essays</em> are excerpts from my personal journal. They are not polished writings; I don't spend
+            long on them, and I write them primarily for my own sake. My <em>Articles</em> are written over a longer period, perhaps
+            a week or two; include links to research that back up my claims; and are written for a larger audience as a 
+            persuasive or informative piece.</p>
+          <p>Note that any artwork used on the website which is not in the "Gallery" section on the left navigation bar
+            is <em>not</em> my own artwork (unless stated that it is mine), and typically will fall under the public domain.</p>
+
+          <hr>
+
+          <h3><span style="font-weight:normal;">Featured Personal Essay:</span>
+            <a href="writings/personal-essays/558-this-too-shall-pass.html">"This Too Shall Pass"</a>
+            <span style="font-size:16px;font-weight:normal;">
+            (2022/8/23)</span></h3>
+
+          <p style="margin: 0 5% 0 5%">
+            <em>
+              Nothing is permanent. Everything must eventually be reduced to memories, relegated to the past. The good things come 
+              and go, and so do the bad things, and everything else too. [...]
+            </em>
+          </p>
+
+          <h3><span style="font-weight:normal;">Featured Article:</span>
+            <a href="writings/articles/001-modern-classical-music.html">"On the State of Modern 'Classical Music'"</a>
+            <span style="font-size:16px;font-weight:normal;">
+            (2022/7/27)</span></h3>
+
+          <p style="margin: 0 5% 0 5%">
+            <em>
+              Music is, at its core, entirely rhythm. To the Universe, there exists no concept of pitch, only rhythm. And every 
+              <m title="pitch difference between two notes" id="dotted">interval</m> is merely a polyrhythm—that is, two rhythms 
+              played simultaneously. [...]
+            </em>
+          </p>
+
+          
+          <br><hr><br>
+
+        </div>
+      </article> 
+    </div>
+  </body>
+</html> 

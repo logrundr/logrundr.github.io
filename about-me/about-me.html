@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Blog header -->
+  <header id="site-header">
+    <h1 class="site-title"><a href="../index.html">aidan's blog</a></h1>
+  </header>
+
+
+  <!--Webpage Title-->
+  <head>
+    <meta charset="utf-8">
+    <title>About Me | aidan's blog</title>
+    <link href="../styles/style.css" rel="stylesheet">
+  </head>
+  
+  <!--Sidenav Themes File-->
+  <script src="../styles/themes.js"></script>
+
+  <!-- Side navigation bar -->
+  <div class="sidenav">
+    <a href="../index.html">Home</a>
+    <a href="../art/art.html">Gallery</a>
+    <hr>
+    <details>
+      <summary>Writings</summary>
+      <ul>
+        <li><a href="../writings/books/books.html">Books</a></li>
+        <li><a href="../writings/personal-essays/personal-essays.html">Personal Essays</a></li>
+        <li><a href="../writings/short-stories/short-stories.html">Short Stories</a></li>
+        <li><a href="../writings/poems/poems.html">Poems</a></li>
+        <li><a href="../writings/articles/articles.html">Articles</a></li>
+      </ul>
+    </details>
+    <hr>
+    <a href="../projects/projects.html">Projects</a>
+    <a href="../glossary/glossary.html">Glossary</a>
+    <a href="../musical-glossary/musical-glossary.html">Musical Glossary</a>
+    <hr>
+    <a href="../index/index.html">Index</a>
+    <a href="../about-me/about-me.html">About Me</a>
+    <hr>
+    <a onclick="changeThemeColors()">Change Theme</a>
+  </div>
+
+
+  <body class="main" onload="loadThemeColors()">
+
+    <div id="page-wrap">
+      <article style="margin: 0 20% 0 20%">
+
+        <br>
+
+        <p style="margin: 0 10% 0 10%">Page created 2022/4/28, last updated 2022/9/12</p>
+
+        <!-- Entry Title -->
+        <header style="margin: 0 10% 0 10%">
+          <h1 style="margin: 5% 0 30px 0">About Me</h1>
+          
+          <hr><br>
+
+        </header>
+
+        <!-- Column Styling -->
+        <style>
+          .left { width: 60%; }
+          .right { width: 40%; }
+        </style>
+
+        <!-- Main Content -->
+        <div align="justify" style="margin: 0 10% 10px 10%">
+          <div class="row">
+            <div class="newcolumn left">
+              <p>
+                I'm Aidan, a 20-year-old college student majoring in astrophysics. 
+                I enjoy writing and keep a journal which I write in semi-frequently. 
+                This site has a page with excerpts from that journal. I'm also an amateur musician; I play organ, piano, and guitar, 
+                and am learning music theory and composing.
+              </p>
+              <p>
+                I am interested in becoming a polymath. There are many fields which I intend to study in the coming years.
+              </p>
+              <p>
+                Please send any inquiries, questions, or comments about my work to <strong>logrundr@proton.me</strong>. Also let 
+                me know of any errors if you spot them. You could also email me if you simply want to chat, especially if you've 
+                read my writings on this website and find yourself feeling similarly to me.
+              </p>    
+            </div>
+            <div class="newcolumn right">
+              <img src="selfportrait.png" alt="Self-Portrait" title="Self-Portrait" width="85%" style="float:right">
+            </div>
+          </div>
+
+          <br><hr><br>
+
+        </div>
+      </article> 
+    </div>
+  </body>
+</html> 
