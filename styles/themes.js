@@ -32,14 +32,14 @@ function changeThemeColors() {
     let root = document.documentElement;
   
     if (current_theme == "dark") {
-        root.style.setProperty("--theme-background-color", "#ced3db");
+        root.style.setProperty("--theme-background-color", "white");
         root.style.setProperty("--theme-text-color", "black");
         root.style.setProperty("--theme-link-color", "darkblue");
         root.style.setProperty("--theme-ext-target-color", "red");
         createCookie("theme","light",1000);
         current_theme = readCookie("theme");
     } else {
-        root.style.setProperty("--theme-background-color", "#020308");
+        root.style.setProperty("--theme-background-color", "black");
         root.style.setProperty("--theme-text-color", "#ececec");
         root.style.setProperty("--theme-link-color", "cornflowerblue");
         root.style.setProperty("--theme-ext-target-color", "red");
@@ -52,14 +52,14 @@ function loadThemeColors() {
     let root = document.documentElement;
   
     if (current_theme == "light") {
-        root.style.setProperty("--theme-background-color", "#ced3db");
+        root.style.setProperty("--theme-background-color", "white");
         root.style.setProperty("--theme-text-color", "black");
         root.style.setProperty("--theme-link-color", "darkblue");
         root.style.setProperty("--theme-ext-target-color", "red");
         createCookie("theme","light",1000);
         current_theme = readCookie("theme");
     } else {
-        root.style.setProperty("--theme-background-color", "#020308");
+        root.style.setProperty("--theme-background-color", "black");
         root.style.setProperty("--theme-text-color", "#ececec");
         root.style.setProperty("--theme-link-color", "cornflowerblue");
         root.style.setProperty("--theme-ext-target-color", "red");
