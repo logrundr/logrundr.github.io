@@ -18,6 +18,10 @@ hr {
     color:var(--theme-text-color);
 }
 
+#image-border {
+    border: 5px solid var(--theme-text-color);
+}
+
 ul {
     margin: 0 0 0 0;
     padding-left: 25px;

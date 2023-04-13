@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Blog header -->
+  <header id="site-header">
+    <h1 class="site-title"><a href="../../index.html">aidan's blog</a></h1>
+  </header>
+
+
+  <!--Webpage Title-->
+  <head>
+    <meta charset="utf-8">
+    <title>Digital Collages | aidan's blog</title>
+    <link href="../../styles/style.css" rel="stylesheet">
+  </head>
+
+  <!--Sidenav Themes File-->
+  <script src="../../styles/themes.js"></script>
+
+  <!-- Side navigation bar -->
+  <div class="sidenav">
+    <a href="../../index.html">Home</a>
+    <a href="../../art/art.html">Gallery</a>
+    <hr>
+    <details>
+      <summary>Writings</summary>
+      <ul>
+        <li><a href="../../writings/books/books.html">Books</a></li>
+        <li><a href="../../writings/personal-essays/personal-essays.html">Personal Essays</a></li>
+        <li><a href="../../writings/short-stories/short-stories.html">Short Stories</a></li>
+        <li><a href="../../writings/poems/poems.html">Poems</a></li>
+        <li><a href="../../writings/articles/articles.html">Articles</a></li>
+      </ul>
+    </details>
+    <hr>
+    <a href="../../projects/projects.html">Projects</a>
+    <a href="../../glossary/glossary.html">Glossary</a>
+    <a href="../../musical-glossary/musical-glossary.html">Musical Glossary</a>
+    <hr>
+    <a href="../../index/index.html">Index</a>
+    <a href="../../about-me/about-me.html">About Me</a>
+    <hr>
+    <a onclick="changeThemeColors()">Change Theme</a>
+  </div>
+
+
+  <body class="main" onload="loadThemeColors()">
+
+    <div id="page-wrap">
+      <article style="margin: 0 20% 0 20%">
+
+        <!-- Quick navigation -->
+        <p style="margin: 0 10% 0 10%"><a href="../../art/art.html">&larr; back to gallery</a></p>
+        <p style="margin: 0 10% 0 10%; text-align: right"> <!--
+          <a href="../001-collages/001-collages.html" title="Digital Collages">&larr; to previous artwork</a>-->
+          <!--<span style="float: right">-->
+            <a href="../002-flowers/002-flowers.html" title="Flowers">to next artwork &rarr;</a>
+          <!--</span>-->
+        </p>
+
+        <!-- Entry Title -->
+        <header style="margin: 0 10% 0 10%">
+          <h1 style="margin: 5% 0 0 0">Digital Collages</h1>
+          <p style="margin: 0 0 30px 0">Artwork 001, 2023/4/13</p>
+          
+          <hr><br>
+
+        </header>
+
+        <!-- Main Content -->
+        <div align="justify" style="margin: 0 10% 10px 10%">
+
+          <div id="page-wrap">
+            <div class="row" id="images">
+              <div class="column">
+                <img src="images/588-A-DSCF0169.jpg" alt="90s crossover example" width="60%" style="display:block;margin-left:auto;margin-right:auto" id="image-border">
+              </div>
+              <div class="column">
+                <img src="images/588-B-DSCF0166.jpg" alt="90s crossover example" width="60%" style="display:block;margin-left:auto;margin-right:auto" id="image-border">
+              </div>
+            </div>
+          </div>
+
+          <br><hr><br>
+
+        </div>
+      </article> 
+    </div>
+  </body>
+</html> 
